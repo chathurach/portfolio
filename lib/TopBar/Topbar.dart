@@ -138,7 +138,6 @@ class _DesktopTopbarState extends State<DesktopTopbar> {
               SizedBox(
                 height: _width * 0.03,
               ),
-              // navBarTop()
               ShowUp(
                 child: navBarTop(),
                 delay: 650,

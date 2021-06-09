@@ -85,7 +85,7 @@ cardInfo(double fSize, Color fColor) {
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       Text(
-        'Measument of Road Undulations using Low-cost Accelerometer and Machine Learning',
+        'Measurement of Road Undulations using Low-cost Accelerometer and Machine Learning',
         style: TextStyle(
           fontFamily: 'Lato',
           fontSize: fSize,
@@ -97,7 +97,7 @@ cardInfo(double fSize, Color fColor) {
         height: fSize,
       ),
       Text(
-        'Use of Machine Learning to Measur the Road Texture',
+        'Use of Machine Learning to Measure the Road Texture',
         style: TextStyle(
           fontFamily: 'Lato',
           fontSize: fSize,
