@@ -329,34 +329,34 @@ class _navBarMobileState extends State<navBarMobile>
 
     Timer(Duration(milliseconds: 500), () {
       _controller.forward();
-      Timer(Duration(milliseconds: 5000), () {
+      Timer(Duration(milliseconds: 1000), () {
         _controller.reverse();
       });
     });
 
     Timer(Duration(milliseconds: 1000), () {
       _controllertw.forward();
-      Timer(Duration(milliseconds: 5000), () {
+      Timer(Duration(milliseconds: 1000), () {
         _controllertw.reverse();
       });
     });
 
     Timer(Duration(milliseconds: 1500), () {
       _controllerln.forward();
-      Timer(Duration(milliseconds: 5000), () {
+      Timer(Duration(milliseconds: 1000), () {
         _controllerln.reverse();
       });
     });
 
     Timer(Duration(milliseconds: 2000), () {
       _controllergh.forward();
-      Timer(Duration(milliseconds: 5000), () {
+      Timer(Duration(milliseconds: 1000), () {
         _controllergh.reverse();
       });
     });
     Timer(Duration(milliseconds: 2500), () {
       _controllergo.forward();
-      Timer(Duration(milliseconds: 5000), () {
+      Timer(Duration(milliseconds: 1000), () {
         _controllergo.reverse();
       });
     });
