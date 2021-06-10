@@ -1,11 +1,6 @@
-import 'dart:convert';
-import 'dart:html';
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/TopBar/navigationBar.dart';
 import 'ShowUp.dart';
-import 'package:show_up_animation/show_up_animation.dart';
 
 class Topbar extends StatefulWidget {
   @override
@@ -52,7 +47,7 @@ class _DesktopTopbarState extends State<DesktopTopbar> {
           ], radius: 0.8),
           shape: BoxShape.rectangle),
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: EdgeInsets.all(_width * 0.015),
         child: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -164,110 +159,123 @@ class _MobileTopbarState extends State<MobileTopbar> {
     var _width = MediaQuery.of(context).size.width;
     //print('mobile top bar');
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: _width,
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
           gradient: RadialGradient(colors: [
-            Color.fromRGBO(136, 189, 188, 100),
-            Color.fromRGBO(37, 78, 88, 100)
+            Theme.of(context).primaryColor,
+            Theme.of(context).primaryColorDark,
           ], radius: 0.8),
           shape: BoxShape.rectangle),
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                ShowUp(
-                  delay: 50,
-                  child: Text(
-                    'Chathura',
-                    style: TextStyle(
-                        height: 1.0,
-                        fontFamily: 'Esteban',
-                        fontSize: _width * 0.09,
-                        color: Colors.white),
+        padding: EdgeInsets.all(_width * 0.015),
+        child: Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ShowUp(
+                delay: 50,
+                child: Text(
+                  'Chathura',
+                  textWidthBasis: TextWidthBasis.longestLine,
+                  style: TextStyle(
+                    height: 1.0,
+                    fontFamily: 'Esteban',
+                    fontSize: _width * 0.1,
+                    color: Theme.of(context).accentColor,
                   ),
                 ),
-                ShowUp(
-                  delay: 50,
-                  child: Text(
-                    'Chamikara',
-                    style: TextStyle(
-                        height: 1.0,
-                        fontFamily: 'Esteban',
-                        fontSize: _width * 0.09,
-                        color: Colors.white),
+              ),
+              ShowUp(
+                delay: 50,
+                child: Text(
+                  'Chamikara',
+                  textWidthBasis: TextWidthBasis.longestLine,
+                  style: TextStyle(
+                    height: 1.0,
+                    fontFamily: 'Esteban',
+                    fontSize: _width * 0.1,
+                    color: Theme.of(context).accentColor,
                   ),
                 ),
-                ShowUp(
-                  delay: 250,
-                  child: Text(
-                    'Hi, I\'m a Material Engineer currently working at',
-                    style: TextStyle(
-                        height: 1.0,
-                        fontFamily: 'Esteban',
-                        fontSize: _width * 0.025,
-                        color: Colors.white),
+              ),
+              ShowUp(
+                delay: 250,
+                child: Text(
+                  'Hi, I\'m a Material Engineer currently working at',
+                  textWidthBasis: TextWidthBasis.longestLine,
+                  style: TextStyle(
+                    height: 1.0,
+                    fontFamily: 'Esteban',
+                    fontSize: _width * 0.035,
+                    color: Theme.of(context).accentColor,
                   ),
                 ),
-                ShowUp(
-                  delay: 450,
-                  child: Text(
-                    'Road Development Authority Sri Lanka',
-                    style: TextStyle(
-                        height: 1.0,
-                        fontFamily: 'Esteban',
-                        fontSize: _width * 0.02,
-                        color: Colors.white),
+              ),
+              ShowUp(
+                delay: 450,
+                child: Text(
+                  'Road Development Authority Sri Lanka',
+                  textWidthBasis: TextWidthBasis.longestLine,
+                  style: TextStyle(
+                    height: 1.0,
+                    fontFamily: 'Esteban',
+                    fontSize: _width * 0.035,
+                    color: Theme.of(context).accentColor,
                   ),
                 ),
-                ShowUp(
-                  delay: 450,
-                  child: SizedBox(
-                    height: _width * 0.04,
-                  ),
+              ),
+              ShowUp(
+                delay: 450,
+                child: SizedBox(
+                  height: _width * 0.04,
                 ),
-                ShowUp(
-                  delay: 650,
-                  child: Container(
-                    width: _width * 0.15,
-                    height: _width * 0.15,
-                    decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                          width: _width * 0.003,
-                          color: Colors.white,
-                        ),
-                        left: BorderSide(
-                          width: _width * 0.003,
-                          color: Colors.white,
-                        ),
-                        right: BorderSide(
-                          width: _width * 0.003,
-                          color: Colors.white,
-                        ),
-                        bottom: BorderSide(
-                          width: _width * 0.003,
-                          color: Colors.white,
-                        ),
+              ),
+              ShowUp(
+                delay: 650,
+                child: Container(
+                  width: _width * 0.3,
+                  height: _width * 0.3,
+                  decoration: BoxDecoration(
+                    border: Border(
+                      top: BorderSide(
+                        width: _width * 0.003,
+                        color: Colors.white,
                       ),
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                        fit: BoxFit.fill,
-                        image: AssetImage('assets/images/image.jpg'),
+                      left: BorderSide(
+                        width: _width * 0.003,
+                        color: Colors.white,
                       ),
+                      right: BorderSide(
+                        width: _width * 0.003,
+                        color: Colors.white,
+                      ),
+                      bottom: BorderSide(
+                        width: _width * 0.003,
+                        color: Colors.white,
+                      ),
+                    ),
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/image.jpg'),
                     ),
                   ),
                 ),
-              ],
-            ),
-          ],
+              ),
+              SizedBox(
+                height: _width * 0.035,
+              ),
+              ShowUp(
+                child: navBarMobile(),
+                delay: 650,
+              ),
+            ],
+          ),
+          //     ),
+          //   ],
+          // ),
         ),
       ),
     );
