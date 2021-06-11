@@ -251,8 +251,8 @@ class _MainBodyMobileState extends State<MainBodyMobile> {
               ),
               cardModelMobile(
                 data: cardInfo(
-                    _width * 0.03, Theme.of(context).primaryColorLight)[1],
-                cardWidth: _width * 0.5,
+                    _width * 0.04, Theme.of(context).primaryColorLight)[1],
+                cardWidth: _width * 0.6,
                 cardHeight: _heigth * 0.6,
                 colorOne: Theme.of(context).primaryColorLight,
                 colorTwo: Theme.of(context).primaryColorDark,
@@ -269,10 +269,10 @@ class _MainBodyMobileState extends State<MainBodyMobile> {
             children: [
               cardModelMobile(
                 data: cardInfo(
-                  _width * 0.03,
+                  _width * 0.04,
                   Theme.of(context).primaryColorDark,
                 )[0],
-                cardWidth: _width * 0.5,
+                cardWidth: _width * 0.6,
                 cardHeight: _heigth * 0.6,
                 colorOne: Theme.of(context).primaryColorDark,
                 colorTwo: Theme.of(context).primaryColorLight,
@@ -331,8 +331,8 @@ class _MainBodyMobileState extends State<MainBodyMobile> {
               ),
               cardModelMobile(
                 data: cardInfo(
-                    _width * 0.03, Theme.of(context).primaryColorLight)[2],
-                cardWidth: _width * 0.5,
+                    _width * 0.04, Theme.of(context).primaryColorLight)[2],
+                cardWidth: _width * 0.6,
                 cardHeight: _heigth * 0.6,
                 colorOne: Theme.of(context).primaryColorLight,
                 colorTwo: Theme.of(context).primaryColorDark,
