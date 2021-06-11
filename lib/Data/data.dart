@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class cardData {
   late IconData icon;
-  late String title;
+  late Text title;
   late Column body;
 }
 
@@ -12,7 +12,16 @@ cardInfo(double fSize, Color fColor) {
   List<cardData> myData = List<cardData>.empty(growable: true);
   var card1 = new cardData();
   card1.icon = FontAwesomeIcons.mugHot;
-  card1.title = 'Interests';
+  card1.title = Text(
+    'Interests',
+    style: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: fSize,
+      fontWeight: FontWeight.bold,
+      color: fColor,
+    ),
+  );
+  //card1.title = 'Interests';
   card1.body = Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +53,16 @@ cardInfo(double fSize, Color fColor) {
 
   var card2 = new cardData();
   card2.icon = FontAwesomeIcons.graduationCap;
-  card2.title = 'Education';
+  card2.title = Text(
+    'Education',
+    style: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: fSize,
+      fontWeight: FontWeight.bold,
+      color: fColor,
+    ),
+  );
+
   card2.body = Column(
     //mainAxisSize: MainAxisSize.max,
     mainAxisAlignment: MainAxisAlignment.center,
@@ -78,7 +96,16 @@ cardInfo(double fSize, Color fColor) {
 
   var card3 = new cardData();
   card3.icon = FontAwesomeIcons.microscope;
-  card3.title = 'Research';
+  card3.title = Text(
+    'Research',
+    style: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: fSize,
+      fontWeight: FontWeight.bold,
+      color: fColor,
+    ),
+  );
+  //card3.title = 'Research';
   card3.body = Column(
     //mainAxisSize: MainAxisSize.max,
     mainAxisAlignment: MainAxisAlignment.center,

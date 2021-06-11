@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/Bodybar/Bodybar.dart';
+
 import 'package:portfolio/Bodybar/Mainbody.dart';
 import 'package:portfolio/TopBar/Topbar.dart';
 
@@ -58,7 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: MediaQuery.of(context).size.height,
                       ),
                       //Bodybar(),
-                      MainBody(),
+                      //MainBody(),
+                      BodySelector(),
                     ],
                   ),
                 ),
