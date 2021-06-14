@@ -104,24 +104,24 @@ class _DesktopTopbarState extends State<DesktopTopbar> {
                   width: _width * 0.15,
                   height: _width * 0.15,
                   decoration: BoxDecoration(
-                    border: Border(
-                      top: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      left: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      right: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      bottom: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                    ),
+                    //   border: Border(
+                    //     top: BorderSide(
+                    //       width: _width * 0.003,
+                    //       color: Colors.white,
+                    //     ),
+                    //     left: BorderSide(
+                    //       width: _width * 0.003,
+                    //       color: Colors.white,
+                    //     ),
+                    //     right: BorderSide(
+                    //       width: _width * 0.003,
+                    //       color: Colors.white,
+                    //     ),
+                    //     bottom: BorderSide(
+                    //       width: _width * 0.003,
+                    //       color: Colors.white,
+                    //     ),
+                    //   ),
                     shape: BoxShape.circle,
                     image: DecorationImage(
                       fit: BoxFit.fill,
@@ -238,24 +238,24 @@ class _MobileTopbarState extends State<MobileTopbar> {
                   width: _width * 0.3,
                   height: _width * 0.3,
                   decoration: BoxDecoration(
-                    border: Border(
-                      top: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      left: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      right: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                      bottom: BorderSide(
-                        width: _width * 0.003,
-                        color: Colors.white,
-                      ),
-                    ),
+                    // border: Border(
+                    //   top: BorderSide(
+                    //     width: _width * 0.003,
+                    //     color: Colors.white,
+                    //   ),
+                    //   left: BorderSide(
+                    //     width: _width * 0.003,
+                    //     color: Colors.white,
+                    //   ),
+                    //   right: BorderSide(
+                    //     width: _width * 0.003,
+                    //     color: Colors.white,
+                    //   ),
+                    //   bottom: BorderSide(
+                    //     width: _width * 0.003,
+                    //     color: Colors.white,
+                    //   ),
+                    // ),
                     shape: BoxShape.circle,
                     image: DecorationImage(
                       fit: BoxFit.fill,
